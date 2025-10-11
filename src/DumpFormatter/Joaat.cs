@@ -59,7 +59,6 @@ internal static class Joaat
 
 
 
-    [Serializable]
     public class DuplicateHashException : Exception
     {
         public uint Hash { get; set; }
@@ -73,6 +72,5 @@ internal static class Joaat
         public DuplicateHashException() { }
         public DuplicateHashException(string message) : base(message) { }
         public DuplicateHashException(string message, Exception inner) : base(message, inner) { }
-        protected DuplicateHashException(SerializationInfo info, StreamingContext context) : base(info, context) { }
     }
 }
